@@ -95,6 +95,7 @@ type Options struct {
 
 	CustomClientAuthentication Authentication `json:"-"`
 	CustomRouterAuthentication Authentication `json:"-"`
+	CustomListener             net.Listener   `json:"-"`
 }
 
 // Clone performs a deep copy of the Options struct, returning a new clone
